@@ -4,7 +4,94 @@
         margin: 0;
         box-sizing: border-box;
     }
+:root
+    {
+        scroll-behavior: smooth; /* Editar el comportamiento del scroll, con efecto smooth */
+
+    }
 body
     {
         font-family: 'Open Sans', sans-serif;
     }
+.contenedor
+    {
+        width: 90%;
+        max-width: 1200px;
+        overflow: hidden; /* todo lo que salga de este contenedor va a estar oculto */
+        margin: auto;
+        padding: 60px 0;
+    }
+header
+    {
+        height: 100vh; /* va a ocupar el 100% de lo que ocupa la pantalla */ 
+        background-image: linear-gradient(to right, rgba(134, 143, 150, 0.384) 0%, rgba(89, 97, 100, 0.402) 100%), url(../images/maquina.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; /* Fixed = fijo en toda la pagina */ 
+        background-position: center;
+    }
+header .head
+    {
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+    }
+header figure .hamburger
+    {
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        background: white;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 0 6px rgba(0,3, 0, 0.5);
+    }
+header .nav-bar
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 30vw;
+        height: 100%; 
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+        /* transition: transform .3s ease-in-out; */
+        transform: translate(-110%);
+    }
+/* header:hover .nav-bar
+    {
+        transform: translate(-110%);
+    } 
+mueve el nav-bar pero se va a hacer con js, de todas formas esta cool*/  
+.spread
+    {
+        transform: translate(0); 
+        /*cuando le des click al boton el translate va a ser de 0 */
+    }
+header .nav-bar a
+    {
+       color: #fff;
+       text-decoration: none; 
+    }
+.titulo
+    {
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+.copy
+    {
+        font-weight: 300;
+        font-size: 25px;
+    }   
+
+/* Nuestro servicio */
