@@ -2,11 +2,14 @@ const imagenes = document.querySelectorAll(".img-galeria");
 const imagenesLight = document.querySelector(".agregar-imagen");
 const contenedorLight = document.querySelector(".imagen-light");
 const botoncitoX = document.querySelector(".close");
+const hamburger1 = document.querySelector(".hamburger");
+
 const aparecerImagen = imagen =>
     {
         imagenesLight.src = imagen;
         contenedorLight.classList.toggle("show");
         imagenesLight.classList.toggle("show-image");
+        hamburger1.style.opacity = "0";
     }
 
 // console.log(imagenes);
@@ -29,5 +32,6 @@ window.addEventListener("click", e =>
             {
                 contenedorLight.classList.toggle("show");
                 imagenesLight.classList.toggle("show-image");
+                hamburger1.style.opacity = "1";
             }
     });
