@@ -7,12 +7,113 @@
     <title>Base portafolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <i class='bx bxl-facebook-circle'></i>
-    <i class='bx bxl-twitter' ></i>
-    <i class='bx bxl-tiktok' ></i>
-    <i class='bx bxl-github'></i>
-    <i class='bx bxl-linkedin'></i>
+    <header class="header" id="inicio">
+        <figure>
+            <img src="./assets/menu_icon.png" alt="icon menu"> 
+        </figure>
+        <nav class="nav-bar">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicio</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#expertos">Expertos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1>Convertimos tus sueños en realidad</h1>
+            <p class="copy">Aqui va algo pero aun no se que va alv ajua </p>
+        </div>
+    </header>
+    <main>
+        <section class="service contenedor" id="servicio">
+            <h2 class="subtitulo">Nuestro servicio</h2>
+            <div class="contenedor-servicio">
+                <img src="./assets/Team meeting_Flatline.svg" alt="team meeting">
+                <div class="checklist-service">
+                    <div class="service">
+                        <h3 class="n-service">
+                            <span class="number">1</span>Diseño web
+                        </h3>
+                        <p>Nuestro servicio es bien por deberías usarlo y notaras la direfencia</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service">
+                            <span class="number">2</span>Diseño web
+                        </h3>
+                        <p>Nuestro servicio es bien por deberías usarlo y notaras la direfencia</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service">
+                            <span class="number">3</span>Diseño web
+                        </h3>
+                        <p>Nuestro servicio es bien por deberías usarlo y notaras la direfencia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="portafolio">
+            <div class="contenedor">
+                <h2 class="subtitle">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="./images/earth.jpg" alt="" class="img-galeria">
+                    <img src="./images/fotoDevWEb.jpg" alt="" class="img-galeria">
+                    <img src="./images/machinecode.jpg" alt="" class="img-galeria">
+                    <img src="./images/maquina.jpg" alt="" class="img-galeria">
+                    <img src="./images/motherBoard.jpg" alt="" class="img-galeria">
+                    <img src="./images/pages.jpg" alt="" class="img-galeria">
+                </div>
+            </div>
+        </section>
+        <!-- <section class="imagen-light">
+            <img src="./assets/x_de_close.png" alt="una x" class="close ">
+            <img src="" alt="" class="agregar-imagen">
+        </section> -->
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitulo">Expertos en:</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img class="n-expert" src="./assets/Team meeting_Flatline.svg" alt="">
+                    <h3>Analytics</h3>
+                </div>
+                <div class="cont-expert">
+                    <img class="n-expert" src="./assets/Online presentation_Monochromatic.svg" alt="">
+                    <h3>teaching others</h3>
+                </div>
+                <div class="cont-expert">
+                    <img class="n-expert" src="./assets/Brainstorming session _Isometric.svg" alt="">
+                    <h3>Brainstorming</h3>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contac-us">
+                <h2>Jesús A frontend developer</h2>
+                <p>Expertos creando sueños</p>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="./" class="social-media-icon">
+                <i class='bx bxl-facebook-circle'></i>
+            </a>
+            <a href="./" class="social-media-icon">
+                <i class='bx bxl-github'></i>                
+            </a>
+            <a href="./" class="social-media-icon">
+                <i class='bx bxl-linkedin'></i>            
+            </a>
+            <a href="./" class="social-media-icon">
+                <i class='bx bxl-twitter' ></i>                       
+            </a>
+            <a href="./" class="social-media-icon">
+                <i class='bx bxl-tiktok' ></i>                    
+            </a>
+        </div>
+    </footer>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/lightbox.js"></script>
 </body>
 </html>
