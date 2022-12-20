@@ -95,3 +95,52 @@ header .nav-bar a
     }   
 
 /* Nuestro servicio */
+.subtitulo
+    {
+        text-align: center;
+        font-weight: 300;
+        color: #9f8ad0;
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+.contenedor-servicio
+    {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+.contenedor-servicio img
+    {
+        width: 40%;
+    }
+.checklist-service
+    {
+        width: 45%;
+    }
+.service
+    {
+        margin-bottom: 20px;
+    }
+.n-service
+    {
+        margin-bottom: 7px;
+        color: #9f8ad0;
+    }
+.number
+    {
+        display: inline-block;
+        background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        color: #fff;
+        border-radius: 50%;
+        font-weight: 700;
+        line-height: 30px; /* para que centre verticalmente */
+        margin-right: 8px;
+    }
+.galery
+    {
+        
+    }
