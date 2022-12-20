@@ -30,7 +30,7 @@ header
         background-attachment: fixed; /* Fixed = fijo en toda la pagina */ 
         background-position: center;
     }
-header .head
+.head
     {
         text-align: center;
         padding: 0;
@@ -41,7 +41,7 @@ header .head
         flex-direction: column;
         color: white;
     }
-header figure .hamburger
+.hamburger
     {
         position: fixed;
         top: 30px;
@@ -54,7 +54,7 @@ header figure .hamburger
         box-shadow: 0 0 6px rgba(0,3, 0, 0.5);
         rotate: 180deg;
     }
-header .nav-bar
+.nav-bar
     {
         position: fixed;
         top: 0;
@@ -67,7 +67,7 @@ header .nav-bar
         justify-content: space-evenly;
         align-items: center;
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-        /* transition: transform .3s ease-in-out; */
+        transition: transform .5s ease-in-out; 
         transform: translate(-110%);
     }
 /* header:hover .nav-bar
